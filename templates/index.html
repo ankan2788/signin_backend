@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 600px;
+            width: 600px;
+            background-image: url("https://cdn.wallpapersafari.com/5/73/QEsKof.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 34px;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.555) ,inset -20px -20px 60px rgba(255, 255, 255, 0.452) ;
+            margin-top: 350px;
+            border:none;
+            
+        }
+        
+        html,body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            background: linear-gradient(45deg,rgb(230, 200, 161),rgb(141, 16, 243));
+           
+        }
+        .it{
+            height: 50px;
+            border-radius: 34px;
+            width: 500px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 10px;
+           
+            
+        }
+        #sub{
+            height: 50px;
+            width: 150px;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            background: none;
+            color: white;
+            border: solid white 5px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="con">
+       <form action="/" method="POST" id="form">
+             <input type="text" name="name"  placeholder="Name" class="it">
+             <input type="text" name="phone" placeholder="Mob No"  class="it">
+             <input type="email" name="email" placeholder="Email"  class="it">
+             <input type="password" name="password" placeholder="Password"  class="it">
+             <button id="sub" >sign in </button>
+       </form>
+       </div>
+    
+
+
+    
+    
+    
+ <script>
+    let doc=document.getElementById("form")
+window.addEventListener('load',()=>{
+    doc.style.transform="rotatey(360deg)";
+    doc.style.transition="0.9s";
+
+
+
+})
+let btn=document.getElementById("sub");
+btn.addEventListener('click',()=>{
+    alert("signed in");
+    console.log("hello world");
+    //doc.remove()
+  //  let div=document.createElement("div");
+    //div.innerHTML="<h1>THANK YOU FOR SIGNING IN</h1>";
+   // div.style.fontSize="40px";
+    //div.style.colour="white";
+    
+   // document.body.appendChild(div);
+
+})
+
+ </script>  
+</body>
+</html>
